@@ -16,14 +16,19 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('avtar');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('mobile')->unique();
+            $table->timestamp('mobile_verified_at')->nullable();
             $table->string('password');
+            $table->enum('type', ['internal', 'astrolger', 'user'])->default('user');
+            $table->string('sub_type')->nullable();
+            $table->string('gender')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
     }
-
+    // json
     /**
      * Reverse the migrations.
      *
