@@ -17,11 +17,8 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $fillable = ['name', 'email', 'password', 'avtar', 'type', 'sub_type', 'gender','mobile'];
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -41,4 +38,25 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function avtar(){
+        $image = $this->avtar;
+
+        if(file_exists($image)){
+             return url($image);
+        }else{
+         return 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png';
+        }
+     }
+
+     public function thumb(){
+        $image = $this->avtar;
+
+        if(file_exists($image)){
+             $path = str_replace('user-image/', 'user-image/thumb/', $image);
+             return url($path);
+        }else{
+         return 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png';
+        }
+     }
 }

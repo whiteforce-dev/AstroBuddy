@@ -52,7 +52,12 @@
             <div class="col-md-6 grid-margin stretch-card">
                 <div class="card tale-bg">
                     <div class="card-people mt-auto">
-                        <img src="{{ asset('assets/images/dashboard/people.svg') }}" alt="people" />
+                        <img
+                            src="{{
+                                asset('assets/images/dashboard/people.svg')
+                            }}"
+                            alt="people"
+                        />
                         <div class="weather-info">
                             <div class="d-flex">
                                 <div>
@@ -1393,7 +1398,11 @@
                             <li>
                                 <div class="d-flex">
                                     <img
-                                        src="{{ asset('assets/images/faces/face1.jpg') }}"
+                                        src="{{
+                                            asset(
+                                                'assets/images/faces/face1.jpg'
+                                            )
+                                        }}"
                                         alt="user"
                                     />
                                     <div>
@@ -1410,7 +1419,11 @@
                             <li>
                                 <div class="d-flex">
                                     <img
-                                        src="{{ asset('assets/images/faces/face2.jpg') }}"
+                                        src="{{
+                                            asset(
+                                                'assets/images/faces/face2.jpg'
+                                            )
+                                        }}"
                                         alt="user"
                                     />
                                     <div>
@@ -1427,7 +1440,11 @@
                             <li>
                                 <div class="d-flex">
                                     <img
-                                        src="{{ asset('assets/images/faces/face3.jpg') }}"
+                                        src="{{
+                                            asset(
+                                                'assets/images/faces/face3.jpg'
+                                            )
+                                        }}"
                                         alt="user"
                                     />
                                     <div>
@@ -1444,7 +1461,11 @@
                             <li>
                                 <div class="d-flex">
                                     <img
-                                        src="{{ asset('assets/images/faces/face4.jpg') }}"
+                                        src="{{
+                                            asset(
+                                                'assets/images/faces/face4.jpg'
+                                            )
+                                        }}"
                                         alt="user"
                                     />
                                     <div>
@@ -1461,7 +1482,11 @@
                             <li>
                                 <div class="d-flex">
                                     <img
-                                        src="{{ asset('assets/images/faces/face5.jpg') }}"
+                                        src="{{
+                                            asset(
+                                                'assets/images/faces/face5.jpg'
+                                            )
+                                        }}"
                                         alt="user"
                                     />
                                     <div>
